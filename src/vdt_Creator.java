@@ -12,12 +12,12 @@ public class vdt_Creator {
 		System.out.println("");
 		System.out.print("Enter the file name: ");
 		
-		extract_Data extractor = new extract_Data();
+		extract_Data extractor = new extract_Data();//using extractor to extract data from the file
 		extractor.filePath = sc.nextLine();
 		extractor.extractVariables();
 		System.out.println("Doing important stuff.....");
 		
-		create_Excel_File creator = new create_Excel_File();
+		create_Excel_File creator = new create_Excel_File();//using creator to create the excel file
 		creator.createFile();
 		creator.writeVdt(extractor.variables,extractor.dataTypes,extractor.description);
 		creator.writeToFile();
