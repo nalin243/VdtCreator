@@ -10,5 +10,16 @@ automatic VDT creator.
 
 ## Usage
 
-If you are on windows, open up a command prompt and cd into the directory contaning source code
+###Windows
+Open up a command prompt and cd into the directory containing the clone and run the following code.
 
+```bash
+java -jar vdtCreator.jar
+```
+
+###Linux
+Open up a terminal and cd into the directory containing the clone and run the following code.
+
+```bash
+java -jar vdtCreator.jar
+```
