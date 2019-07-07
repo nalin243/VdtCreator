@@ -51,8 +51,8 @@ public class create_Excel_File {
 		}
 	}
 	
-	void writeToFile() throws IOException {
-		FileOutputStream writer = new FileOutputStream("vdt.xls");
+	void writeToFile(int numOfFile) throws IOException {
+		FileOutputStream writer = new FileOutputStream("vdt"+numOfFile+".xls");
 		wb.write(writer);
 		writer.close();
 	}

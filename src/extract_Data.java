@@ -11,6 +11,8 @@ public class extract_Data {
 	LinkedList<String> variables = new LinkedList<String>();
 	LinkedList<String> description  = new LinkedList<String>();
 	
+	LinkedList<String> tempVars = new LinkedList<String>();
+	
 	
 	void extractLoopVars(String statement) {
 		
@@ -19,9 +21,13 @@ public class extract_Data {
 			String tokens[] = reqStatement.split(" ");
 			if( (statement.split("\\(")[0]).equals("for")) {
 				if(tokens[0].equals("int") || tokens[0].equals("String"))
-					variables.add(tokens[1]);
-					dataTypes.add(tokens[0]);
-					description.add("Loop variable");
+					if(!(tempVars.contains(tokens[1]))) {
+						variables.add(tokens[1]);
+						dataTypes.add(tokens[0]);
+						description.add("Loop variable");
+						
+						tempVars.add(tokens[1]);
+					}
 			}
 		}
 
