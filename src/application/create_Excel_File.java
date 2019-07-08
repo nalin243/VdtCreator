@@ -1,3 +1,4 @@
+package application;
 
 
 import org.apache.poi.hssf.usermodel.HSSFFont;
@@ -51,8 +52,8 @@ public class create_Excel_File {
 		}
 	}
 	
-	void writeToFile(int numOfFile) throws IOException {
-		FileOutputStream writer = new FileOutputStream("vdt"+numOfFile+".xls");
+	void writeToFile(String fileName) throws IOException {
+		FileOutputStream writer = new FileOutputStream("vdt"+fileName+".xls");
 		wb.write(writer);
 		writer.close();
 	}
