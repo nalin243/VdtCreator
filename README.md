@@ -1,6 +1,6 @@
 # VDT Creator
 
-VDT Creator is a simple program for Indian students who might be studying java or any other language where they have to 
+VDT Creator is a simple program for Indian students who might be studying java where they have to 
 create VDTs aka Variable Description Tables. These may be asked for in projects or just plain assignments.Whatever it 
 may be, VDTs are a pain to create. 
 
